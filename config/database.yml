@@ -48,7 +48,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: belajar_production
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
   username: root
-  password: <%= ENV['BELAJAR_DATABASE_PASSWORD'] %>
+  password: Qxt1w2F6m4
+  socket: /var/run/mysqld/mysqld.sock
