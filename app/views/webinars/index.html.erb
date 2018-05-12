@@ -1,0 +1,75 @@
+           <div class="main-container">
+            <section class="cover unpad--bottom switchable text-center-xs bg--dark">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6 col-lg-5 mt--3">
+                            <h1> If You've Got the <b>Time</b>, We've Got the <b>Webinar.</b></h1>
+                            <p class="lead">Belajar.Work provide any topics using webinar and screencast media platform.<br></p>
+                            <a class="btn btn--primary type--uppercase" href="#"> <span class="btn__text">join our events </span> </a> <span class="block type--fine-print">or <a href="index.html">view the screencast</a></span> </div>
+                        <div class="col-md-6"> <img alt="Image" src="https://cdn.belajar.work/img/landing-5.jpg"> </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video video-1 text-center space--xxs bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="modal-instance">
+                                <div class="video-play-icon video-play-icon--sm modal-trigger box-shadow"></div>
+                                <div class="modal-container">
+                                    <div class="modal-content bg-dark" data-width="60%" data-height="60%"> <iframe data-src="https://www.youtube.com/embed/T6EC4MMj2Xw?autoplay=1" allowfullscreen="allowfullscreen"></iframe> </div>
+                                </div>
+                            </div>
+                            <h2>Short story about Belajar.Work<br></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="space--xxs">
+                <div class="container">
+                    <div class="row text-block">
+                        <div class="col-md-12">
+                            <h3>More recent webinars &amp; screencasts<br></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                      <%	 @webinar.each do |w| %>
+                        <div class="col-md-4">
+                            <article class="feature feature-1">
+                              <%= link_to webinar_path(w), class: "block" do %>
+                                <%= image_tag w.image %>
+                              <% end %>
+                                <div class="feature__body boxed boxed--border"> <span><%= w.created_at.strftime("%d %b %Y") %>,</span> <em> Speaker: <%= w.speaker.titleize %></em>
+                                    <h5><%= w.title.titleize %></h5>
+							                      <%= link_to "Read More", webinar_path(w) %>
+                                </div>
+                            </article>
+                        </div>
+                        <%	 end %>
+                    </div>
+                </div>
+            </section>
+            <section class="switchable space--xxs bg--secondary">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="mt--3">
+                                <h1>You <b>better</b> get inside <b>Webinar.</b></h1>
+                                <p class="lead">Just few minutes, <b>We respect </b>about your privacy.<br></p>
+                                <hr class="short">
+                                <form action="https://work.us18.list-manage.com/subscribe/post?u=6b9e871348e6f5fe00f43804e&amp;id=b021f94d90" method="post">
+                                    <div class="row">
+                                        <div class="col-12"> <input name="FNAME" placeholder="First Name" id="mce-FNAME" type="text"> </div>
+                                        <div class="col-12"> <input name="EMAIL" placeholder="Email Address" type="email" id="mce-EMAIL" > </div>
+                                        <div class="col-12"> <button type="submit" class="btn btn--primary" name="subscribe" id="mc-embedded-subscribe">Subscribe</button> </div>
+                                        <div class="col-12"> <span class="type--fine-print">By fill in the form, you agree to the <a href="#">Terms of Service</a></span> </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5"> <img alt="Image" class="border--round box-shadow-wide" src="https://cdn.belajar.work/img/photography-9.jpg"> </div>
+                    </div>
+                </div>
+            </section>

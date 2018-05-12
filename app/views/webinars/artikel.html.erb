@@ -1,0 +1,92 @@
+<div class="main-container">
+  <section class="cover unpad--bottom switchable text-center-xs bg--dark">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6 col-lg-5 ">
+          <h1> <%= @webinar.title.titleize %></h1>
+          <div class="lead"><%=raw @webinar.about %><br></div>
+          <a class="btn btn--primary type--uppercase" href="#"> <span class="btn__text"><%= @webinar.speaker.titleize %> </span> </a>
+          <span class="block type--fine-print">or <a href="index.html">view the screencast</a></span></div>
+        <div class="col-md-6"><img alt="Image" src="https://cdn.belajar.work/img/landing-5.jpg"></div>
+      </div>
+    </div>
+  </section>
+  <section class="space--xxs">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- <div class="col-md-10 col-lg-8"> -->
+        <div class="col-6 col-md-4">.
+
+
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">Support Speaker!</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Vote</a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <div class="col-12 col-md-8">
+
+          <article>
+           <!--end article title-->
+            <div class="article__body">
+              <%=raw @webinar.content %>
+            </div>
+          </article>
+          <!--end item-->
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="space--xxs">
+    <div class="container space--xxs">
+      <div class="row space--xxs">
+        <div class="col-md-12 space--xxs">
+          <hr>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="space--xxs">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8 space--xxs">
+          <div id="disqus_thread" class="space--xxs"></div>
+          <script>
+
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function () { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://belajarwork.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+ <%= render 'iklan'%>
+</div>

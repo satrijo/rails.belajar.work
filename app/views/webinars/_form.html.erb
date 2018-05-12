@@ -1,0 +1,77 @@
+<script src="https://cdn.ckeditor.com/4.9.2/full-all/ckeditor.js"></script>
+<div class="main-container">
+  <section class="cover unpad--bottom switchable text-center-xs bg--dark">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6 col-lg-5 ">
+          <h1> Admin Dashboard</h1>
+        </div>
+      </div>
+  </section>
+  <section class="space--xxs">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- <div class="col-md-10 col-lg-8"> -->
+
+        <div class="col-md-12">
+
+          <article>
+            <!--end article title-->
+            <div class="article__body">
+              <%= form_for @webinar do |f| %>
+                <form class="row">
+                  <div class="col-md-12">
+                    <%= f.label :title %>
+                    <%= f.text_field :title, placeholder: "Type Title Here" %>
+                  </div>
+                  <div class="col-md-12">
+                    <%= f.label :speaker %>
+                    <%= f.text_field :speaker, placeholder: "Type Speaker Here" %>
+                  </div>
+                  <div class="col-md-12">
+                    <%= f.cktext_area :about  %>
+                  </div>
+                  <div class="col-md-12">
+                    <%= f.label :date %>
+                    <%= f.text_field :date, placeholder: "Select Date Webinar Here", type: 'date' %>
+                  </div>
+                  <div class="col-md-12">
+                    <%= f.label :cover %>
+                    <%= f.text_field :image, placeholder: "Link Gambar Promosi" %>
+                  </div>
+                  <div class="col-md-12">
+                    <%= f.label :video %>
+                    <%= f.text_field :embed, placeholder: "Videonya bisa dikosongin" %>
+                  </div>
+                  <div class="col-md-12">
+                    <%= f.label :content %>
+                    <%= f.cktext_area :content, placeholder: "Diisi materinya" %>
+                  </div>
+                  <div class="col-md-12">
+                    <%= f.submit 'Buat Story!', class: "btn btn--primary" %>
+                  </div>
+                </form>
+              <% end %>
+            </div>
+          </article>
+          <!--end item-->
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+
+  </section>
+  <section class="space--xxs">
+    <div class="container space--xxs">
+      <div class="row space--xxs">
+        <div class="col-md-12 space--xxs">
+          <hr>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+</div>
+

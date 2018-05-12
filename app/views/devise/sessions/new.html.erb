@@ -1,0 +1,67 @@
+<div class="main-container">
+  <section class="cover unpad--bottom switchable text-center-xs bg--dark">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6 col-lg-5 ">
+          <h1> Sign In</h1>
+        </div>
+      </div>
+  </section>
+  <section class="space--xxs">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- <div class="col-md-10 col-lg-8"> -->
+
+        <div class="col-5">
+
+          <article>
+            <!--end article title-->
+            <div class="article__body">
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+                  <div class="field">
+                    <%= f.label :email %><br />
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                  </div>
+
+                  <div class="field">
+                    <%= f.label :password %><br />
+                    <%= f.password_field :password, autocomplete: "off" %>
+                  </div>
+
+                  <% if devise_mapping.rememberable? -%>
+                    <div class="field ">
+                      <%= f.label :remember_me %><%= f.check_box :remember_me %>
+
+                    </div>
+                  <% end -%>
+
+                  <div class="actions">
+                    <%= f.submit "Log in" %>
+                  </div>
+                </form>
+                <% end %>
+
+                <%= render "devise/shared/links" %>
+            </div>
+          </article>
+          <!--end item-->
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+
+  </section>
+  <section class="space--xxs">
+    <div class="container space--xxs">
+      <div class="row space--xxs">
+        <div class="col-md-12 space--xxs">
+          <hr>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+</div>

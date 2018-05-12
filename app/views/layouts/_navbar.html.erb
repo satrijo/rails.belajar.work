@@ -1,0 +1,73 @@
+<div class="nav-container">
+  <div class="via-1525576882084" via="via-1525576882084" vio="navibar-top">
+    <div class="bar bar--sm visible-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 col-md-2">
+            <%= link_to root_path do %>
+              <img class="logo logo-dark" alt="logo" src="https://cdn.belajar.work/img/logo-dark.png"> <img class="logo logo-light" alt="logo" src="https://cdn.belajar.work/img/logo-light.png">
+            <% end %>
+          </div>
+          <div class="col-9 col-md-10 text-right">
+            <a href="#-mobile" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i class="icon icon--sm stack-interface stack-menu"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav id="menu1" class="bar bar-1 hidden-xs bar--absolute bar--transparent">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-md-2 hidden-xs">
+            <div class="bar__module">
+              <%= link_to root_path do %>
+                <img class="logo logo-dark" alt="logo" src="https://cdn.belajar.work/img/logo-dark.png"> <img class="logo logo-light" alt="logo" src="https://cdn.belajar.work/img/logo.png">
+              <% end %>
+            </div>
+          </div>
+          <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+            <div class="bar__module">
+              <ul class="menu-horizontal text-left">
+                <li> <%= link_to root_path, target: "_self" do %>Home <% end %> </li>
+                <% if user_signed_in? %><% if current_user.level == 1 %>
+                <li class="dropdown"> <span class="dropdown__trigger">Admin <sup><span class="badge badge-pill badge-warning">Restricted</span></sup></span>
+                  <div class="dropdown__container">
+                    <div class="container">
+                      <div class="row">
+                        <div class="dropdown__content col-lg-2">
+                          <ul class="menu-vertical">
+                            <li> <%= link_to "Story", content_all_path, target: "_self" %> </li>
+                            <li> <%= link_to "Speaker", upcoming_path, target: "_self" %> </li>
+                            <li> <%= link_to "User", upcoming_path, target: "_self" %> </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <% end %><% end %>
+                <li> <%= link_to "Upcoming", upcoming_path, target: "_self" %> </li>
+                <li> <a href="belajar.work" target="_self">Stories</a> </li>
+                <li> <a href="belajar.work" target="_self">Our mission</a> </li>
+                <li> <a href="belajar.work" target="_self">f.a.q </a> </li>
+              </ul>
+            </div>
+            <div class="bar__module">
+
+              <% if user_signed_in? %>
+                <a class="btn btn--sm type--uppercase" href=""> <span class="btn__text">Halo <%= current_user.name %>
+                                </span> </a>
+                <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "btn btn-primary type--uppercase btn--sm btn__text" %>
+              <% else %>
+                <a class="btn btn--sm type--uppercase" href="/users/sign_in"> <span class="btn__text">login
+                                                  </span> </a>
+                <a class="btn btn--sm btn--primary type--uppercase" href="/users/sign_up">
+                  <span class="btn__text">register</span> </a>
+              <% end %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+
+<div class="main-container">
+  <section class="cover unpad--bottom switchable text-center-xs bg--dark">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6 col-lg-5 ">
+          <h1> Admin Dashboard</h1>
+      </div>
+    </div>
+  </section>
+  <section class="space--xxs">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- <div class="col-md-10 col-lg-8"> -->
+        <div class="col-md-12">
+          <article>
+           <!--end article title-->
+            <div class="article__body">
+              <div><%= link_to '+ Story', new_webinar_path, class: "btn btn-primary" %></div>
+                <table class="border--round table--alternate-row">
+                  <thead>
+                  <tr>
+                    <th>Create</th>
+                    <th>Title</th>
+                    <th>Speaker</th>
+                    <th>Action</th>
+                  </tr>
+                  </thead>
+
+                  <tbody>
+                  <% @webinar.each do |all| %>
+                  <tr>
+                    <td><%= all.created_at.strftime("%d %b %Y") %></td>
+                    <td><%= all.title %></td>
+                    <td><%= all.speaker %></td>
+                    <td><%= link_to 'Edit', edit_webinar_path(all) %> | <%= link_to "Hapus", webinar_path(all), method: :delete, data: {confirm: "Yakin nih?"} %></td>
+                  </tr>
+                  <% end %>
+                  </tbody>
+
+                </table>
+
+
+
+            </div>
+          </article>
+          <!--end item-->
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="space--xxs">
+    <div class="container space--xxs">
+      <div class="row space--xxs">
+        <div class="col-md-12 space--xxs">
+          <hr>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+</div>
+
