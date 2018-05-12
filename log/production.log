@@ -1,0 +1,171 @@
+I, [2018-05-11T13:43:47.682432 #32258]  INFO -- : [4265389a-3232-4011-84c3-99f35edf47af] Started GET "/" for 36.75.143.177 at 2018-05-11 13:43:47 +0000
+I, [2018-05-11T13:43:47.682833 #32258]  INFO -- : [6562963d-60a8-4603-8f25-71bfcafc9dac] Started GET "/robots.txt" for 36.75.143.177 at 2018-05-11 13:43:47 +0000
+I, [2018-05-11T13:43:47.685847 #32258]  INFO -- : [4265389a-3232-4011-84c3-99f35edf47af] Cannot render console from 36.75.143.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2018-05-11T13:43:47.691100 #32258]  INFO -- : [4265389a-3232-4011-84c3-99f35edf47af] Processing by WebinarsController#index as HTML
+I, [2018-05-11T13:43:47.686212 #32258]  INFO -- : [6562963d-60a8-4603-8f25-71bfcafc9dac] Cannot render console from 36.75.143.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2018-05-11T13:43:47.701228 #32258] FATAL -- : [6562963d-60a8-4603-8f25-71bfcafc9dac]   
+F, [2018-05-11T13:43:47.701318 #32258] FATAL -- : [6562963d-60a8-4603-8f25-71bfcafc9dac] ActionController::RoutingError (No route matches [GET] "/robots.txt"):
+F, [2018-05-11T13:43:47.701342 #32258] FATAL -- : [6562963d-60a8-4603-8f25-71bfcafc9dac]   
+F, [2018-05-11T13:43:47.701370 #32258] FATAL -- : [6562963d-60a8-4603-8f25-71bfcafc9dac] actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] railties (5.2.0) lib/rails/engine.rb:524:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[6562963d-60a8-4603-8f25-71bfcafc9dac] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-05-11T13:43:47.708034 #32258]  INFO -- : [4265389a-3232-4011-84c3-99f35edf47af]   Rendering webinars/index.html.erb within layouts/application
+I, [2018-05-11T13:43:47.720483 #32258]  INFO -- : [4265389a-3232-4011-84c3-99f35edf47af]   Rendered webinars/index.html.erb within layouts/application (12.1ms)
+I, [2018-05-11T13:43:47.721044 #32258]  INFO -- : [4265389a-3232-4011-84c3-99f35edf47af] Completed 500 Internal Server Error in 30ms
+F, [2018-05-11T13:43:47.722338 #32258] FATAL -- : [4265389a-3232-4011-84c3-99f35edf47af]   
+F, [2018-05-11T13:43:47.722392 #32258] FATAL -- : [4265389a-3232-4011-84c3-99f35edf47af] ActionView::Template::Error (Access denied for user 'belajar'@'localhost' (using password: NO)):
+F, [2018-05-11T13:43:47.722594 #32258] FATAL -- : [4265389a-3232-4011-84c3-99f35edf47af]     34:                     </div>
+[4265389a-3232-4011-84c3-99f35edf47af]     35:                     <div class="row">
+[4265389a-3232-4011-84c3-99f35edf47af]     36: 
+[4265389a-3232-4011-84c3-99f35edf47af]     37:                       <%	 @webinar.each do |w| %>
+[4265389a-3232-4011-84c3-99f35edf47af]     38:                         <div class="col-md-4">
+[4265389a-3232-4011-84c3-99f35edf47af]     39:                             <article class="feature feature-1">
+[4265389a-3232-4011-84c3-99f35edf47af]     40:                               <%= link_to webinar_path(w), class: "block" do %>
+F, [2018-05-11T13:43:47.722639 #32258] FATAL -- : [4265389a-3232-4011-84c3-99f35edf47af]   
+F, [2018-05-11T13:43:47.722673 #32258] FATAL -- : [4265389a-3232-4011-84c3-99f35edf47af] app/views/webinars/index.html.erb:37:in `_app_views_webinars_index_html_erb___3223392130254715254_47145504368380'
+I, [2018-05-11T13:44:01.091611 #32258]  INFO -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75] Started GET "/content/all" for 36.75.143.177 at 2018-05-11 13:44:01 +0000
+I, [2018-05-11T13:44:01.092493 #32258]  INFO -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75] Cannot render console from 36.75.143.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2018-05-11T13:44:01.094896 #32258]  INFO -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75] Processing by WebinarsController#all as HTML
+I, [2018-05-11T13:44:01.098818 #32258]  INFO -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75]   Rendering webinars/all.html.erb within layouts/application
+I, [2018-05-11T13:44:01.102593 #32258]  INFO -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75]   Rendered webinars/all.html.erb within layouts/application (3.6ms)
+I, [2018-05-11T13:44:01.103021 #32258]  INFO -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75] Completed 500 Internal Server Error in 8ms
+F, [2018-05-11T13:44:01.104140 #32258] FATAL -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75]   
+F, [2018-05-11T13:44:01.104270 #32258] FATAL -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75] ActionView::Template::Error (Access denied for user 'belajar'@'localhost' (using password: NO)):
+F, [2018-05-11T13:44:01.104431 #32258] FATAL -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75]     28:                   </thead>
+[f7a157da-44d8-4e2a-b6c7-96723aec5c75]     29: 
+[f7a157da-44d8-4e2a-b6c7-96723aec5c75]     30:                   <tbody>
+[f7a157da-44d8-4e2a-b6c7-96723aec5c75]     31:                   <% @webinar.each do |all| %>
+[f7a157da-44d8-4e2a-b6c7-96723aec5c75]     32:                   <tr>
+[f7a157da-44d8-4e2a-b6c7-96723aec5c75]     33:                     <td><%= all.created_at.strftime("%d %b %Y") %></td>
+[f7a157da-44d8-4e2a-b6c7-96723aec5c75]     34:                     <td><%= all.title %></td>
+F, [2018-05-11T13:44:01.104463 #32258] FATAL -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75]   
+F, [2018-05-11T13:44:01.104483 #32258] FATAL -- : [f7a157da-44d8-4e2a-b6c7-96723aec5c75] app/views/webinars/all.html.erb:31:in `_app_views_webinars_all_html_erb__1291452642197438466_47145503828120'
+I, [2018-05-11T13:44:19.128958 #32258]  INFO -- : [1b4483be-b30a-4333-8f72-38922aa00b44] Started GET "/" for 36.75.143.177 at 2018-05-11 13:44:19 +0000
+I, [2018-05-11T13:44:19.130327 #32258]  INFO -- : [1b4483be-b30a-4333-8f72-38922aa00b44] Cannot render console from 36.75.143.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+I, [2018-05-11T13:44:19.132742 #32258]  INFO -- : [1b4483be-b30a-4333-8f72-38922aa00b44] Processing by WebinarsController#index as HTML
+I, [2018-05-11T13:44:19.136871 #32258]  INFO -- : [1b4483be-b30a-4333-8f72-38922aa00b44]   Rendering webinars/index.html.erb within layouts/application
+I, [2018-05-11T13:44:19.140256 #32258]  INFO -- : [1b4483be-b30a-4333-8f72-38922aa00b44]   Rendered webinars/index.html.erb within layouts/application (3.2ms)
+I, [2018-05-11T13:44:19.140481 #32258]  INFO -- : [1b4483be-b30a-4333-8f72-38922aa00b44] Completed 500 Internal Server Error in 8ms
+F, [2018-05-11T13:44:19.141704 #32258] FATAL -- : [1b4483be-b30a-4333-8f72-38922aa00b44]   
+F, [2018-05-11T13:44:19.141759 #32258] FATAL -- : [1b4483be-b30a-4333-8f72-38922aa00b44] ActionView::Template::Error (Access denied for user 'belajar'@'localhost' (using password: NO)):
+F, [2018-05-11T13:44:19.142065 #32258] FATAL -- : [1b4483be-b30a-4333-8f72-38922aa00b44]     34:                     </div>
+[1b4483be-b30a-4333-8f72-38922aa00b44]     35:                     <div class="row">
+[1b4483be-b30a-4333-8f72-38922aa00b44]     36: 
+[1b4483be-b30a-4333-8f72-38922aa00b44]     37:                       <%	 @webinar.each do |w| %>
+[1b4483be-b30a-4333-8f72-38922aa00b44]     38:                         <div class="col-md-4">
+[1b4483be-b30a-4333-8f72-38922aa00b44]     39:                             <article class="feature feature-1">
+[1b4483be-b30a-4333-8f72-38922aa00b44]     40:                               <%= link_to webinar_path(w), class: "block" do %>
+F, [2018-05-11T13:44:19.142103 #32258] FATAL -- : [1b4483be-b30a-4333-8f72-38922aa00b44]   
+F, [2018-05-11T13:44:19.142125 #32258] FATAL -- : [1b4483be-b30a-4333-8f72-38922aa00b44] app/views/webinars/index.html.erb:37:in `_app_views_webinars_index_html_erb___3223392130254715254_47145504368380'
+I, [2018-05-11T13:44:19.149740 #32258]  INFO -- : [4fbe2a3f-c215-4193-bbca-76d469773243] Started GET "/robots.txt" for 36.75.143.177 at 2018-05-11 13:44:19 +0000
+I, [2018-05-11T13:44:19.150421 #32258]  INFO -- : [4fbe2a3f-c215-4193-bbca-76d469773243] Cannot render console from 36.75.143.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2018-05-11T13:44:19.151697 #32258] FATAL -- : [4fbe2a3f-c215-4193-bbca-76d469773243]   
+F, [2018-05-11T13:44:19.151760 #32258] FATAL -- : [4fbe2a3f-c215-4193-bbca-76d469773243] ActionController::RoutingError (No route matches [GET] "/robots.txt"):
+F, [2018-05-11T13:44:19.151801 #32258] FATAL -- : [4fbe2a3f-c215-4193-bbca-76d469773243]   
+F, [2018-05-11T13:44:19.151864 #32258] FATAL -- : [4fbe2a3f-c215-4193-bbca-76d469773243] actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+[4fbe2a3f-c215-4193-bbca-76d469773243] web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+[4fbe2a3f-c215-4193-bbca-76d469773243] web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+[4fbe2a3f-c215-4193-bbca-76d469773243] railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[4fbe2a3f-c215-4193-bbca-76d469773243] activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+[4fbe2a3f-c215-4193-bbca-76d469773243] activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+[4fbe2a3f-c215-4193-bbca-76d469773243] railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] railties (5.2.0) lib/rails/engine.rb:524:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[4fbe2a3f-c215-4193-bbca-76d469773243] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[4fbe2a3f-c215-4193-bbca-76d469773243] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[4fbe2a3f-c215-4193-bbca-76d469773243] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[4fbe2a3f-c215-4193-bbca-76d469773243] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-05-11T13:44:19.239941 #32258]  INFO -- : [4ceb5592-830a-4a1f-a071-21bdafe3ddf9] Started GET "/favicon.ico" for 36.75.143.177 at 2018-05-11 13:44:19 +0000
+I, [2018-05-11T13:44:19.240627 #32258]  INFO -- : [4ceb5592-830a-4a1f-a071-21bdafe3ddf9] Cannot render console from 36.75.143.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2018-05-11T13:44:19.241701 #32258] FATAL -- : [4ceb5592-830a-4a1f-a071-21bdafe3ddf9]   
+F, [2018-05-11T13:44:19.241768 #32258] FATAL -- : [4ceb5592-830a-4a1f-a071-21bdafe3ddf9] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-05-11T13:44:19.241789 #32258] FATAL -- : [4ceb5592-830a-4a1f-a071-21bdafe3ddf9]   
+F, [2018-05-11T13:44:19.241921 #32258] FATAL -- : [4ceb5592-830a-4a1f-a071-21bdafe3ddf9] actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] railties (5.2.0) lib/rails/engine.rb:524:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[4ceb5592-830a-4a1f-a071-21bdafe3ddf9] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-05-11T13:44:19.242789 #32258]  INFO -- : [746f9628-923c-4ccb-a27b-8ed40e5d90b7] Started GET "/favicon.ico" for 36.75.143.177 at 2018-05-11 13:44:19 +0000
+I, [2018-05-11T13:44:19.243323 #32258]  INFO -- : [746f9628-923c-4ccb-a27b-8ed40e5d90b7] Cannot render console from 36.75.143.177! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+F, [2018-05-11T13:44:19.244252 #32258] FATAL -- : [746f9628-923c-4ccb-a27b-8ed40e5d90b7]   
+F, [2018-05-11T13:44:19.244312 #32258] FATAL -- : [746f9628-923c-4ccb-a27b-8ed40e5d90b7] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-05-11T13:44:19.244337 #32258] FATAL -- : [746f9628-923c-4ccb-a27b-8ed40e5d90b7]   
+F, [2018-05-11T13:44:19.244371 #32258] FATAL -- : [746f9628-923c-4ccb-a27b-8ed40e5d90b7] actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] railties (5.2.0) lib/rails/engine.rb:524:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[746f9628-923c-4ccb-a27b-8ed40e5d90b7] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
