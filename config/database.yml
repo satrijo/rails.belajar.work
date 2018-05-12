@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: belajar_production
-  username: belajar
+  username: root
   password: <%= ENV['BELAJAR_DATABASE_PASSWORD'] %>
